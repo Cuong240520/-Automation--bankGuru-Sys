@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Tech Panda Page">
+
+	<parameter name="Url" value="https://demo.guru99.com/v4/" />
+
+
+	<listeners>
+		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+		<!-- <listener class-name="reportConfigs.ReportNGListener" /> -->
+		<listener class-name="reportConfigs.ExtentTestListener" />
+		<listener class-name="commons.MethodListener" />
+		<!-- <listener class-name="reportConfigs.AllureTestListener" /> -->
+	</listeners>
+
+
+	<test name="Run on ChromeBrowser">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.bankguru.customer.RegisterPage" /> 
+		    <class name="com.bankguru.customer.NewCustomer" /> 
+					
+
+		</classes>
+	</test>
+
+
+
+
+</suite> <!-- Suite -->
